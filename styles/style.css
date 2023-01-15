@@ -135,10 +135,16 @@ p {
 /* card-contain.......... */
 
 .card-contain {
-    width: 50%;
-    margin: 0px;
+    width: 40%;
+    margin: 4px;
     height: auto;
     padding: 10px;
+}
+
+.card-p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .card {
@@ -347,6 +353,7 @@ p {
         height: 64px;
         border-radius: 8px;
         background-color: rgb(247, 134, 93);
+        border: none;
     }
 
     /* main section 4 image.......................start  */
@@ -385,12 +392,11 @@ p {
 
 
     .feature-image {
-        width: 90%;
+        width: 99%;
         height: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-left: 3px;
 
 
     }
@@ -400,15 +406,21 @@ p {
     /* card-contain.......... */
 
     .card-contain {
-        width: 70%;
+        width: 50%;
 
     }
 
 
+    .card {
 
+
+        width: 100%;
+
+        /* overflow: scroll; */
+    }
 
     .feature-img1 img {
-        max-width: 100%;
+        width: 90%;
 
 
 
@@ -423,6 +435,7 @@ p {
         background-color: rgb(236, 105, 10);
         top: 20px;
         left: 20px;
+        border-radius: 8px;
 
 
     }
