@@ -6,7 +6,7 @@
 /* header style */
 
 header {
-    max-height: 1322px;
+    height: 1322px;
     width: 100%;
     background: rgba(255, 144, 14, 0.1);
 }
@@ -324,6 +324,14 @@ p {
 
 /* media query for mobile ..................................................................................*/
 @media screen and (max-width: 576px) {
+   
+    .primary-btn {
+        width: 100px;
+        height: 64px;
+        border-radius: 8px;
+        background-color: rgb(247, 134, 93);
+        border: none;
+    }
     nav {
 
         flex-direction: column;
