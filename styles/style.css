@@ -7,7 +7,7 @@
 
 header {
     max-height: 1322px;
-    max-width: 1920px;
+    width: 100%;
     background: rgba(255, 144, 14, 0.1);
 }
 
@@ -57,7 +57,7 @@ p {
 }
 
 .head-bg-img {
-    width: 570px;
+    width: 50%;
     margin: 20px auto;
 }
 
@@ -70,47 +70,50 @@ p {
 
 /* main section 4 image */
 .main-four-img-and-desc {
+
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    gap: 80px;
+
+    margin-left: 20px;
+
 
 }
 
 .main-four-img {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
-    gap: 10px;
+    grid-template-columns: repeat(2, 120px);
+    gap: 20px;
     padding: 10px;
-    
+    /* margin-left: 30px; */
 
 }
 
 .main-four-img img {
-    width: 242px;
-    height: 242px;
+    width: 142px;
+    height: 142px;
     margin: 2px;
-    
+    /* gap:5px;
 
-    border-radius: 8px;
+    border-radius: 8px; */
 }
 
 .main-four-img-desc {
-    width: 537px;
-height: 304px;
-margin-left: 10px;
+    width: 30%;
+    height: auto;
+    margin: 10px auto;
 }
 
 /* feature-image section..............................*/
 
 
 .feature-image {
-    width: 1200px;
+    width: 700px;
     height: auto;
     display: flex;
     margin: 20px auto;
-
+    gap: 2px;
     /* position: absolute; */
 
 }
@@ -131,9 +134,9 @@ margin-left: 10px;
 
 .card-contain {
     width: 50%;
-    margin: 20px;
-    max-height: 100%;
-    padding: 20px;
+    margin: 0px;
+    height: auto;
+    padding: 10px;
 }
 
 .card {
@@ -141,7 +144,7 @@ margin-left: 10px;
     padding: 10px;
     margin: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
     text-align: left;
     /* overflow: scroll; */
 }
@@ -150,13 +153,13 @@ margin-left: 10px;
 /* feature-img .................. */
 .feature-img1 {
     max-width: 400px;
-    max-height: 900px;
+    max-height: 800px;
 
 
 }
 
 .feature-img1 img {
-    max-width: 300px;
+    width: 80%;
     max-height: 600px;
     /* position: absolute; */
 }
@@ -181,20 +184,23 @@ margin-left: 10px;
     position: relative;
 }
 
-/* some facts */
+/* some facts.................... */
+
 .some-fact {
     width: 90%;
     height: 50%;
     text-align: left;
-    margin: 0 auto;
-    /* background-color: red; */
+    margin: 20px auto;
+
+    margin-top: 40px;
+
 }
 
-/* some-fact-container */
+/* some-fact-container............................ */
 
 .some-fact-container {
     width: 80%;
-    margin: 30px auto;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
@@ -209,12 +215,13 @@ margin-left: 10px;
     margin: 4px auto;
     text-align: center;
     padding: 10px;
+    transition: background-color 1s linear 0.5s;
 }
 
 @keyframes slidein {
     0% {
         transform: rotate(360deg);
-        transition: slidein 10s;
+
     }
 }
 
@@ -222,9 +229,41 @@ margin-left: 10px;
     background-color: rgb(245, 160, 160);
     animation-duration: 3s;
     animation-name: slidein;
+    background-color: rgb(128, 98, 63);
+
 }
 
 
+
+/* our project ................. start............ */
+.new-sec {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid green;
+    max-width: 80%;
+    background-color: rgb(93, 189, 165);
+    color: rgb(245, 215, 179);
+    margin: 0 auto;
+}
+
+/* new section adding by me........................extra task  */
+.our-project {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img {
+    width: 50%;
+    height: auto;
+}
+
+.container-img img {
+    width: 50%;
+    border: 2px solid yellow;
+    box-shadow: 1px 1px 1px 1px red;
+}
 
 
 /* sponsor start................... */
@@ -275,57 +314,25 @@ margin-left: 10px;
     padding-top: 20px
 }
 
-/* our project ................. */
-.new-sec{
- text-align: center;
- border: 1px solid green;
- max-width: 80%;
- background-color:rgb(1, 5, 4);
- color: wheat;
- margin: 0 auto;
-}
-
-.our-project {
-    display: flex;
-    /* width: 80%;
-    margin: 20px ; */
-    margin-left: 20%;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-img {
-    width: 50%;
-    height: auto;
-}
-
-.container-img img {
-    width: 50%;
-}
-
 /* media query for mobile ..................................................................................*/
 @media screen and (max-width: 576px) {
     nav {
-        display: flex;
+
         flex-direction: column;
         justify-content: space-around;
-        padding: 50px;
+
     }
 
     .nav-li ul {
-        margin: 2px;
-        display: flex;
+
         flex-direction: column;
-        gap: 30px
+        /* gap: 30px */
     }
 
     .brand_new-section {
-        width: 25%;
-        height: 25%;
+        width: 100%;
+        height: auto;
 
-        /* align-items: center; */
-        text-align: center;
-        padding: 5px;
     }
 
     .head-bg-img {
@@ -343,21 +350,22 @@ margin-left: 10px;
     /* /* main section 4 image */
 
     .main-four-img-and-desc {
-        display: flex;
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 70%;
+        max-width: 100%;
         margin-top: 10px;
-        text-align: center;
+
     }
 
     .main-four-img {
         display: flex;
         flex-direction: column;
-
+        align-items: center;
+        justify-content: center;
         gap: 20px;
-        width: 40%;
+        width: 100%;
         margin: 10px;
     }
 
@@ -366,37 +374,22 @@ margin-left: 10px;
         padding: 10px;
     }
 
-    /* feature image */
-    /* .feature-image{
-    max-width: 1000px;
-    max-height: 1059px; ;
-    /* background-color: red; */
+
 
     /* feature-image section..............................*/
 
 
     .feature-image {
-        width: 100%;
+        width: 90%;
         height: auto;
         display: flex;
         flex-direction: column;
-        margin: 20px auto;
-        padding: 10px;
-        /* border: 2px solid rgb(129, 129, 113); */
-        /* position: absolute; */
+        justify-content: center;
+        align-items: center;
+
 
     }
 
-    .div-line1 {
-        display: flex;
-    }
-
-    .div-line {
-
-        height: 40px;
-        width: 5px;
-        background-color: rgb(247, 125, 111);
-    }
 
 
     /* card-contain.......... */
@@ -420,19 +413,6 @@ margin-left: 10px;
     }
 
 
-    /* feature-img .................. */
-    .feature-img1 {
-        max-width: 100%;
-        max-height: 800px;
-
-
-    }
-
-    .feature-img1 img {
-
-        max-height: 600px;
-
-    }
 
     .feature-img1 img {
         max-width: 100%;
@@ -441,7 +421,7 @@ margin-left: 10px;
         /* position: absolute; */
     }
 
-    /* feature-image....... */
+
 
 
     .featers-small-box {
@@ -456,11 +436,10 @@ margin-left: 10px;
 
 
 
-    /* some-fact-container */
+    /* some-fact-container ..................... start.......*/
 
     .some-fact-container {
-        width: 100%;
-        margin: 30px auto;
+
         display: flex;
         flex-direction: column;
 
@@ -469,33 +448,32 @@ margin-left: 10px;
 
     }
 
-    .contain {
-        border: 1px solid rgb(233, 140, 75);
-        max-width: 100%;
-        max-height: 100%;
-        margin: 4px auto;
-        text-align: center;
-        padding: 10px;
+
+
+
+    /* our project ................. */
+
+    .our-project {
+        display: flex;
+
+        flex-direction: column;
+
     }
 
-    @keyframes slidein {
-        0% {
-            transform: rotate(360deg);
-            transition: slidein 10s;
-        }
+    .container-img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
-    .contain:hover {
-        background-color: rgb(245, 160, 160);
-        animation-duration: 3s;
-        animation-name: slidein;
+    .container-img img {
+        width: 100%;
     }
 
 
-
-    /* sponsor start................... */
+    /* sponsor start................... ......... start......*/
     .sponsor {
-        max-width: 50%;
+        max-width: 100%;
         height: 100%;
 
         margin: 20px auto;
@@ -509,7 +487,7 @@ margin-left: 10px;
 
 
     .sponsor-icon img {
-        width: 100px;
+        width: 60%;
 
         height: 100%;
 
@@ -520,32 +498,8 @@ margin-left: 10px;
     .sponsor-icon {
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        justify-content: center;
-        align-items: center;
-
-        margin: 20px;
+        gap: 20px
     }
 
-    /* our project ................. */
-
-    .our-project {
-        display: flex;
-        /* width: 80%;
-    margin: 20px ; */
-        flex-direction: column;
-
-        /* justify-content: center;
-    align-items: center; */
-    }
-
-    .container-img {
-        width: 50%;
-        height: auto;
-    }
-
-    .container-img img {
-        width: 100%;
-    }
 
 }
